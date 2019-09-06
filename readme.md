@@ -7,6 +7,8 @@ The transition is controlled by time between 0.0f (invisible) and 1.0f (visible)
 
 
 ```java
+
+// optionally set this to false when you're not materializing to save the shader from a bit of math.
 material.setBoolean("Materializing", true);
 material.setFloat("EffectTime", time)
 ```
@@ -57,3 +59,11 @@ fpp.addFilter(new BloomFilter());
 viewPort.addProcessor(fpp);
 
 ```
+
+The shader comes with a `Texture` in the `src\main\resources\textures` directory that it uses for the animation.
+If you want to use another, set the `Noise` parameter on the material.
+
+```java
+material.setTexture("Noise", assetManager.loadTexture("Textures/my-noise-texture.png"))
+```
+
