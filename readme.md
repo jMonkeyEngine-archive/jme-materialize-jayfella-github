@@ -3,6 +3,8 @@ Materialize Shader
 
 A "materialize" shader for jmonkeyengine that simulates "materializing" an object in or out.
 
+See the [main class](https://github.com/jayfella/jme-materialize/blob/master/src/main/java/com/jayfella/materialize/Main.java) for a working example.
+
 The transition is controlled by time between 0.0f (invisible) and 1.0f (visible), set in the material:
 
 
